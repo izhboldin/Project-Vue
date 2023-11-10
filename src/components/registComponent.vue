@@ -66,6 +66,7 @@ const signInWithGoogle = async () => {
     const provider = new GoogleAuthProvider();
     try {
         const user = await signInWithPopup(getAuth(), provider).user
+        console.log(user);
         clearFavorCoun();
         getBooks('')
         router.push({ name: 'book' });

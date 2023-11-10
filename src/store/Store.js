@@ -54,7 +54,7 @@ export const useAlertsStore = defineStore('alerts', () => {
     }
     const register = (email, password, userName) => {
         createUserWithEmailAndPassword(getAuth(), email, password)
-            .then(async (data) => {
+            .then(async () => {
                 await updateProfile(getAuth().currentUser, {
                     displayName: userName,
                 });

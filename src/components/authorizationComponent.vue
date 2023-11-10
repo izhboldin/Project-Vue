@@ -51,7 +51,7 @@ const Verifi = () => {
 }
 const signIn = () => {
     signInWithEmailAndPassword(getAuth(), email.value, password.value)
-        .then((data) => {
+        .then(() => {
             getBooks('')
             clearFavorCoun()
             router.push({ name: 'book' });

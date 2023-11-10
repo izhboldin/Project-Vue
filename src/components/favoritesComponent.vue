@@ -43,8 +43,6 @@ import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { getAuth, onAuthStateChanged, } from 'firebase/auth';
 import { useRouter } from 'vue-router'
 import { useAlertsStore } from '@/store/Store.js';
-import { toast } from 'vue3-toastify';
-import 'vue3-toastify/dist/index.css';
 
 const group = ref([]);
 const currentId = ref(null);
